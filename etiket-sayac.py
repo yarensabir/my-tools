@@ -4,7 +4,7 @@
 #liste döndürmek için gerekli kütüphaneyi import ediyoruz
 from array import * 
 
-def readTXT(path, fileCount, classCount,):
+def readTXT(path, fileCount, classCount):
     #sahip olduğumuz sınıf sayısı büyüklüğünde liste oluşturuyoruz
     #her index classes.txt dosyasının bir fazla numaralı satırında olan etiketin sayısını tutacak
     #yani sıfırıncı indexte classes.txt dosyasındaki birinci satırda bulunan etiketin sayısı tutulacak
@@ -12,7 +12,7 @@ def readTXT(path, fileCount, classCount,):
     #etiketli fotoğraf sayısı = fileCount
     #dosyaları kolay okuyabilmek adına aritmetik artan biçimde yeniden isimlendirme yaptım
     #yani resimler ve .txt dosya isimlendirmesi 1.jpg 1.txt, 2.jpg, 2.txt,  ... şeklinde
-    for i in range(1,fileCount):
+    for i in range(1,fileCount+1):
         try: 
             #klasörden tek tek .txt dosyalarını alıyoruz
             file =  path + str(i) + ".txt" 
