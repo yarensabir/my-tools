@@ -4,7 +4,9 @@
 def wh_finder(path,file_number):
     
     """
-    bu kod, nesne tespiti için boyunun küçük olduğunu düşündüğümüz etiketleri elemek için kullanıldı.
+    bu fonksiyon, nesne tespiti için boyunun küçük olduğunu düşündüğümüz etiketleri elemek için kullanıldı.
+    bu fonksiyon ile boyunun uygun olduğunu düşündüğümüz etiketin alanını buluyoruz.
+    
     uygulandığı veri seti şu şekildedir: her resimde 1 adet trafik levhası bulunmaktadır ve düz bir yolda sırayla bu tabelaların görüntüleri toplanmıştır
     ayrıca dosya isimleri 1.txt, 2.txt, 3.txt şeklinde sıralıdır
 
