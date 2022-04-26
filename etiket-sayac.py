@@ -2,7 +2,9 @@
 # -*- coding: utf-8 -*-
 
 #liste döndürmek için gerekli kütüphaneyi import ediyoruz
-from array import * 
+from array import *
+from cgi import test
+from logging.config import valid_ident 
 
 def readTXT(path, fileCount, classCount):
     #sahip olduğumuz sınıf sayısı büyüklüğünde liste oluşturuyoruz
@@ -28,14 +30,15 @@ def readTXT(path, fileCount, classCount):
                     if text == (str(j)):
                         counters[j] = counters[j] + 1
         except Exception:
-            print(i)
+            pass
     return counters
 
 
+tests = readTXT("/home/yaren/rb2022/dataset/test/", 200000, 28)
+valid = readTXT("/home/yaren/rb2022/dataset/valid/", 200000, 28)
+train = readTXT("/home/yaren/rb2022/dataset/train/", 200000, 28)
+toplam = [0]*28 
+for x in range(28):
+    toplam[x] = tests[x] + valid[x] + train[x]
 
-    
-
-
-
-
-
+print(toplam)
